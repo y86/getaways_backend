@@ -1,0 +1,49 @@
+# MacOS file system
+.DS_Store
+
+# App artifacts
+/_build
+/db
+/deps
+
+# If NPM crashes, it generates a log, let's ignore it too.
+npm-debug.log
+
+# The directory NPM downloads your dependencies sources to.
+/assets/node_modules/
+
+# Since we are building assets from assets/,
+# we ignore priv/static. You may want to comment
+# this depending on your deployment strategy.
+/priv/static/
+/assets/node_modules
+npm-debug.log
+
+/*.ez
+
+# Generated on crash by the VM
+erl_crash.dump
+ttb_last_config
+
+# Files matching config/*.secret.exs pattern contain sensitive
+# data and you should not commit them into version control.
+#
+# Alternatively, you may comment the line below and commit the
+# secrets files as long as you replace their contents by environment
+# variables.
+/config/prod.secret.exs
+/config/prod.env.secret.sh
+/config/prod.env.secret.sh~
+
+# VS Code Elixir extension
+.elixir_ls/*
+.elixir_ls
+.vscode/*
+.vscode
+
+# files for private use
+.iex.exs
+my_custom_script.exs
+my_scripts.pgsql
+/config/local_dev.exs
+test.log
