@@ -8,7 +8,7 @@
 use Mix.Config
 
 config :cors_plug,
-  origin: ["http://localhost:3000", "http://192.168.1.39:63467"], "*"],
+  origin: ["http://localhost:3000", "http://192.168.1.39:63467", "*"],
   max_age: 86400,
   methods: ["GET", "POST"]
 

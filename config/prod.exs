@@ -66,6 +66,15 @@ config :logger, level: :info
 # Note you can't rely on `System.get_env/1` when using releases.
 # See the releases documentation accordingly.
 
+config :getaways, Getaways.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: {:system, "DATABASE_URL"},
+  database: "",
+  ssl: true,
+  pool_size: 2
+  # id: "983cd2c0-2d97-4674-996c-e2981e242b5a",
+
+
 # Finally import the config/prod.secret.exs which should be versioned
 # separately.
 import_config "prod.secret.exs"
